@@ -41,13 +41,6 @@ function Login({ user, onLogin }) {
   );
 }
 
-const Logo = styled.h1`
-  font-family: "Permanent Marker", cursive;
-  font-size: 3rem;
-  color: deeppink;
-  margin: 8px 0 16px;
-`;
-
 const Wrapper = styled.section`
   max-width: 500px;
   margin: 40px auto;

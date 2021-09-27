@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Box, Button } from "../styles";
+import { Button } from "../styles";
 import PetItem from "./PetItem";
 function PetList({user}) {
   const [pets, setPets] = useState([]);
@@ -44,10 +44,6 @@ function PetList({user}) {
 const Wrapper = styled.section`
   max-width: 800px;
   margin: 40px auto;
-`;
-
-const Pet = styled.article`
-  margin-bottom: 24px;
 `;
 
 export default PetList;
