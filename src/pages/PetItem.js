@@ -3,7 +3,7 @@ import { Box } from "../styles";
 function PetItem({pet,isLogin, onDeletePet}) {
     const { id, name, image, user } = pet;
     function handleDeletePet() {
-        fetch(`/pets/${id}`, {
+        fetch(process.env.REACT_APP_API_URL + `/pets/${id}`, {
           method: "DELETE",
         }).then((r) => {
           if (r.ok) {

@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     // auto-login
-    fetch("/me").then((r) => {
+    fetch(process.env.REACT_APP_API_URL + "/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }

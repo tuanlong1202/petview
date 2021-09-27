@@ -7,7 +7,7 @@ function PetList({user}) {
   const [pets, setPets] = useState([]);
 
   useEffect(() => {
-    fetch("/pets")
+    fetch(process.env.REACT_APP_API_URL + "/pets")
       .then((r) => r.json())
       .then(setPets);
   }, []);

@@ -18,7 +18,7 @@ function NewPet({ user }) {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("/pets", {
+    fetch(process.env.REACT_APP_API_URL + "/pets", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
